@@ -1,0 +1,402 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-size: 100vw 100vh; }
+
+body {
+  font-family: 'Titillium Web', sans-serif;
+  background-image: linear-gradient(to left, white, #21618C); }
+
+h1 {
+  font-size: 50px;
+  font-weight: 600px;
+  line-height: 80px;
+  text-align: center;
+  color: #fff;}
+
+p {
+  font-size: 25px;
+  line-height: 1.8;
+  margin-bottom: 0; }
+
+
+/*-----------------------index de servicios-----------------------*/
+#serviciosIndex {
+  color: black;
+  padding: 60px 10px; }
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.servicios-container {
+  position: relative;
+  overflow: hidden;
+  margin: 40px 10px;
+  border-radius: 2px; }
+
+.servicios-container img {
+  -moz-transition: all 0.8s;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s; }
+
+.servicios-container:hover img {
+  -moz-transform: scale(1.04);
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04); }
+
+.servicios-details {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  z-index: 9000; }
+
+.servicios-details a h3 {
+  color: #fff; } /*Fin pagina de servicios*/
+
+
+ /*-----------------------index de nosotros-----------------------*/
+.tituloNosotros {
+  color: black;
+  margin-bottom: 20px; }
+
+.contenidoNosotros {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between; }
+
+.articleNosotros {
+  display: flex;
+  align-items: center;
+  flex: 2 1 auto;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  margin-top: 20px;
+  color: black; }
+
+.imagenNosotros {
+  flex: 1 1 auto;
+  width: 200px;
+  height: 200px;
+  margin: 10px; }
+
+.imagenNosotros img {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  width: 230px; } /*Fin de Nosotros*/
+
+
+/*-----------------------index de clientes-----------------------*/
+.clientes {
+  display: flex;
+  flex-flow: column nowrap; }
+
+.tituloClientes {
+  margin-top: 60px;
+  flex: 1 1 auto;
+  color: black; }
+
+.articleClientes {
+  margin-top: 60px;
+  flex: 1 1 auto;
+  color: black; }
+
+.imagenClientes {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1 1 auto; }
+
+.imagenClientes img {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  width: 150px;
+  height: 150px; }
+
+.figureClientes {
+  margin: 10px;
+  flex: 1 1 auto; }
+
+.figureClientes figcaption {
+  display: flex;
+  justify-content: center;
+  color: black; } /*Fin de Clientes*/
+
+
+/*-----------------------index de contacto-----------------------*/
+.tituloContacto {
+  margin-top: 80px;
+  color: black; }
+
+.contenidoContacto {
+  margin-top: 60px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between; }
+
+.articleContacto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 auto;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  color: #e5be01; }
+
+.imagenContacto {
+  flex: 1 1 auto;
+  width: 200px;
+  height: 200px;
+  margin: 10px; }
+
+.imagenContacto img {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  width: 200px; }/*Fin de Contacto*/
+
+
+/*-----------------------index footer-----------------------*/
+.containerFooter {
+  margin-top: 60px;
+  background: #828282;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-flow: column nowrap; }
+
+.pie {
+  background: #21618C;
+  width: 100%;
+  text-align: center; }
+/*Fin de Footer*/
+
+/*-----------------------html Servicios-----------------------*/
+
+.tituloPrincipal{
+  margin-top: 25px;
+}
+
+.contenedor {
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto; }
+
+.card1 {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 50px;
+  margin-top: 50px; }
+
+.card__thumbnail {
+  width: 1500px;
+  margin-right: 20px;
+  border-radius: 10px;
+  display: inline-block; }
+
+.card__img {
+  width: 100%; }
+
+.card__titulo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+  margin-bottom: 20px; }
+
+.card__textos {
+  font-family: 'Raleway', sans-serif; }
+
+.card__descripcion {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  margin-bottom: 20px; }
+
+.btn--absolute {
+  position: absolute;
+  right: 25px;
+  background-origin: padding-box; } /*Fin html de Servicios*/
+
+/*-----------------------html Clientes-----------------------*/
+/*Galeria*/
+
+.gallery-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 80px;
+  grid-auto-rows: 250px;
+  padding: 20px;
+  grid-gap: 10px;
+}
+.gallery__img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery__item{
+  position: relative;
+}
+
+.gallery__item:nth-child(1){
+  grid-column-start: span 3;
+}
+
+.gallery__title{
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  background: linear-gradient(rgba(90,175,255,0.3), rgba(0,0,0,0.5));
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+}
+
+
+
+/*-----------------------Formulario de Contacto----------------------- */
+
+.enviar {
+  margin-top: 20px; }
+
+.formulario {
+  margin-top: 20px; } /*Fin formulario contacto*/
+
+/*-------------------------------media---------------------------------*/
+
+@media (max-width: 575.98px) {
+  h1 {
+    font-size: 40px;
+    line-height: normal; }
+  h4 {
+    font-size: 20px;
+    line-height: normal; }
+  h3 {
+    font-size: 15px;
+    line-height: normal; }
+  p {
+    font-size: 15px;
+    line-height: normal; }
+
+/*html servicios*/
+  .card__textos h3 {
+    font-size: 15px;
+    }
+  .card__textos p{
+    font-size: 12px;
+    } /*fin html servicios*/
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  h1 {
+    font-size: 40px;
+    line-height: normal; }
+  h4 {
+    font-size: 20px;
+    line-height: normal; }
+  h3 {
+    font-size: 15px;
+    line-height: normal; }
+  p {
+    font-size: 17px;
+    line-height: normal; }
+
+/*html servicios*/
+  .card__textos h3 {
+    font-size: 15px;
+    }
+  .card__textos p{
+    font-size: 12px;
+  }/*fin html servicios*/
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  h1 {
+    font-size: 40px;
+    line-height: normal; }
+  h4 {
+    font-size: 20px;
+    line-height: normal; }
+  h3 {
+    font-size: 15px;
+    line-height: normal; }
+  p {
+    font-size: 20px;
+    line-height: normal; }
+
+/*html servicios*/
+  .card__textos h3 {
+    font-size: 15px;}
+  .card__textos p{
+    font-size: 12px;}
+/*fin html servicios*/
+
+/*html Nosotros*/
+  .card__textos-nosotros p{
+    font-size: 25px;
+  }
+  .card__textos-nosotros h2{
+    font-size: 35px;
+  }
+/*fin html Nosotros*/
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  h1 {
+    font-size: 40px;
+    line-height: normal; }
+  h4 {
+    font-size: 20px;
+    line-height: normal; }
+  h3 {
+    font-size: 15px;
+    line-height: normal; }
+  p {
+    font-size: 20px;
+    line-height: normal; }
+
+/*html Nosotros*/
+  .card__textos-nosotros p{
+    font-size: 27px;
+  }
+  .card__textos-nosotros h2{
+    font-size: 40px;
+  }
+/*fin html Nosotros*/
+  
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 40px;
+    line-height: normal; }
+  h4 {
+    font-size: 20px;
+    line-height: normal; }
+  h3 {
+    font-size: 15px;
+    line-height: normal; }
+  p {
+    font-size: 20px;
+    line-height: normal; }
+
+/*html Nosotros*/
+  .card__textos-nosotros p{
+    font-size: 27px;
+  }
+  .card__textos-nosotros h2{
+    font-size: 40px;
+  }
+  .card__img {
+  width: 80%; }/*fin html Nosotros*/
+
+}
+
